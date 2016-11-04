@@ -26,6 +26,7 @@
     UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64)];
     bgView.backgroundColor = [UIColor clearColor];
     [self addSubview:bgView];
+    NSLog;
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((kScreenWidth - 208/2)/2, (kScreenHeight - 64 - 208/2)/2 - 50, 208/2, 208/2)];
     imageView.image = [UIImage imageNamed:@"noInfoImage.png"];
@@ -33,8 +34,8 @@
     
     UILabel *infoLabel = [[UILabel alloc] init];
     infoLabel.frame = CGRectMake(0, imageView.frame.origin.y + imageView.frame.size.height + 10, kScreenWidth, 30);
-    infoLabel.text = text;
     infoLabel.textColor = [UIColor blackColor];
+    
     infoLabel.textAlignment = NSTextAlignmentCenter;
     infoLabel.font = Font(16);
     [self addSubview:infoLabel];
