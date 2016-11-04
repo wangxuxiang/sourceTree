@@ -1,11 +1,8 @@
-//
-//  UserChooseLabelModel.m
-//  Project_Framework_4.6
-//
-//  Created by LGM on 15/5/2.
-//  Copyright (c) 2015年 Johnson. All rights reserved.
-//
 
+
+
+
+//=========
 #import "UserChooseLabelModel.h"
 
 @implementation UserChooseLabelModel
@@ -18,6 +15,7 @@
             self.name = [dict objectForKey:@"name"];
 //            self.selected = [NSString stringWithFormat:@"%@",[dict objectForKey:@"selected"]];
             self.labelId = [dict objectForKey:@"id"];
+            NSLog(@"hello);
             
         }
         @catch (NSException *exception) {
